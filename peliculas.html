@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelis</title>
+</head>
+
+<body>
+    <h1>PELIS PELIS!! :D</h1>
+    <script>
+        //Inicio 
+        const peliculas = [
+            {
+                titulo: 'Doctor Stranger',
+                rating: 4,
+                LaHasVisto: false
+            },
+            {
+                titulo: 'Spiderman',
+                rating: 4,
+                LaHasVisto: true
+            },
+            {
+                titulo: 'Jackass',
+                rating: 5,
+                LaHasVisto: true
+            }
+        ];  //Otro metodo de hacerlo: FOR (LET pelicula of peliculas)
+        for (let i = 0; i < peliculas.length; i++) {
+            if (peliculas[i].LaHasVisto) {
+                console.log('Viste " ' + peliculas[i].titulo + ' " - ' + peliculas[1].rating + ' estrellas');
+            } else {
+                console.log('No la Viste " ' + peliculas[i].titulo + ' " - ' + peliculas[1].rating + ' estrellas');
+            }
+        }     
+    </script>
+</body>
+
+</html>
